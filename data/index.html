@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>HOME</title>
+</head>
+<body onload="init()">
+    <div class="header">
+        HOME
+    </div>
+    
+    <div class="corps">
+
+        <div class="carte">
+            <h1>LUMIERES</h1>
+            <div class="liste_E">
+                <div class="item_E">
+                    Salon
+                    <label class="switch">
+                        <input type="checkbox" onclick="majE1()" id="E1">
+                        <span class="switchSlider"></span>
+                    </label>
+                </div>
+                <div class="item_Ev">
+                    Chambre
+                    <span id="valeurEV1">0</span>
+                    <input type="range" min="0" max="100" value="0" id="EV1" oninput="valeurEV1(this.value)" onchange="majEV1(this.value)">
+                </div>
+            </div>
+        </div>
+
+        <div class="carte">
+            <h1>VOLETS</h1>
+            <div class="liste_V">
+                <div class="item_V">
+                    <div class="titre_V">Tous</div>
+                    <button onclick="majV('haut')" class="">
+                        <div class="triangle-haut"></div>
+                    </button>
+                    <button onclick="majV('')" class="">
+                        <div class="carre"></div>
+                    </button>
+                    <button onclick="majV('bas')" class="">
+                        <div class="triangle-bas"></div>
+                    </button>
+                </div>
+                <div class="item_V">
+                    <div class="titre_V">Cuisine</div>
+                    <button onclick="majV1('haut')" class="">
+                        <div class="triangle-haut"></div>
+                    </button>
+                    <button onclick="majV1('')" class="">
+                        <div class="carre"></div>
+                    </button>
+                    <button onclick="majV1('bas')" class="">
+                        <div class="triangle-bas"></div>
+                    </button>
+                </div>
+                <div class="item_V">
+                    <div class="titre_V">Salon</div>
+                    <button onclick="majV2('haut')" class="">
+                        <div class="triangle-haut"></div>
+                    </button>
+                    <button onclick="majV2('')" class="">
+                        <div class="carre"></div>
+                    </button>
+                    <button onclick="majV2('bas')" class="">
+                        <div class="triangle-bas"></div>
+                    </button>
+                </div>
+                <div class="item_V">
+                    <div class="titre_V">Chambre</div>
+                    <button onclick="majV3('haut')" class="">
+                        <div class="triangle-haut"></div>
+                    </button>
+                    <button onclick="majV3('')" class="">
+                        <div class="carre"></div>
+                    </button>
+                    <button onclick="majV3('bas')" class="">
+                        <div class="triangle-bas"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
