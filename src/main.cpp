@@ -116,10 +116,10 @@ void setup() {
   WiFi.mode(WIFI_STA);
   //WiFi.config(INADDR_NONE, INADDR_NONE, INADDR_NONE);
   WiFi.setHostname("Po_esp32");
-  WiFi.begin(ssid, password);
+  WiFi.begin(SSID, PASSWORD);
 #ifdef DEBUG
     Serial.print("Connexion à ");
-    Serial.print(ssid);
+    Serial.print(SSID);
     Serial.print("...");
 #endif
 	
